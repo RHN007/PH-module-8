@@ -9,7 +9,8 @@
   <style>
     .menu-container {
       display: flex;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
+      /* align-items: center; */
     }
 
     .food {
@@ -20,7 +21,12 @@
     .food img {
       width: 75%;
     }
-    /* @media (max-width: 700px) {
+    @media (min-width: 700px) and (max-width: 899px) {
+      .food {
+        background-color: red;
+      }
+    }
+    @media (max-width: 900px) {
       .food {
         background-color: orange;
         margin-bottom: 20px;
@@ -33,7 +39,7 @@
       .food {
         background-color: palegoldenrod;
       }
-    } */
+    }
   </style>
   <body>
     <div class="menu-container">
